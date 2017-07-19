@@ -1,0 +1,8 @@
+<h2>Add a note!</h2>
+
+<div class="add_note">
+	<form (submit)="createNote(); noteForm.reset()" #noteForm="ngForm">
+		New Note: <textarea name="content" cols="80" [(ngModel)]="newNote.content"></textarea>
+		<button type="submit">Add Note</button>
+	</form>
+</div>

@@ -1,0 +1,5 @@
+<h1>{{ title }}</h1>
+
+<app-add (newNoteEvent)="createNote($event)"></app-add>
+
+<app-list [childNotes]="notes"></app-list>
